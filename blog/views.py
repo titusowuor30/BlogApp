@@ -5,10 +5,12 @@ from . models import Post
 
 # Create your views here.
 def index(request):
-    return render(request,'index.html')
+    posts=Post.objects.all()
+    return render(request,'index.html',{'posts':posts})
 
-def post_detail(request):
-    return render(request,'post_detail.html',{'post':Post})
+def post_detail(request,id):
+    post=Post.objects.get(id=id)
+    return render(request,'post_detail.html',{'post':post})
 
 def sidebar(request):
     return render(request,'sidebar.html')

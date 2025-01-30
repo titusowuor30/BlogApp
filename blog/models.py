@@ -8,8 +8,15 @@ class Post(models.Model):
     introduction=models.TextField()
     body=models.TextField()
     date_added=models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.title}- {self.author}'
+    
+    
     class Meta:
         ordering=['-date_added']
+
+        
 
 class Comment(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='comments')
