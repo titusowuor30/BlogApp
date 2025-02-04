@@ -5,7 +5,7 @@
 ### Step 01
 - Clone the repository from here [htps...](https://github.com/Wambui-Thiongo/BlogApp.git)
 
-`code 
+`script 
 git clone https://github.com/Wambui-Thiongo/BlogApp.git
 cd BlogApp
 python -m venv env
