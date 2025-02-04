@@ -37,5 +37,6 @@ django-admin startproject BlogApp .
 - Create an app
 - Register your app in settings
 
-
+### Step 06
+- Ignore step 05
 
